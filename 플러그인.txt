@@ -1,0 +1,21 @@
+플러그인 
+react snippet 검색
+- ES7+ React/Redux/React-Native snippets 다운
+
+ESLint 검색 후 다운 (문법 검색 도구)
+
+prettier 검색 
+- Prettier - Code formatter 다운
+
+웹 store
+https://chromewebstore.google.com/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=ko
+react-developer-tools 다운
+
+ node --version
+
+
+https://itpro.tistory.com/100
+
+
+-- 설정 2 다음
+npm run dev

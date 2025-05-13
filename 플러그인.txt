@@ -19,3 +19,32 @@ https://itpro.tistory.com/100
 
 -- 설정 2 다음
 npm run dev
+
+
+명령어 
+rcc
+---------------------------
+
+import React, { Component } from 'react'
+
+export default class PropsComponent extends Component {
+  render() {
+    return (
+      <div>PropsComponent</div>
+    )
+  }
+}
+-----------------------------
+
+
+rfc
+-----------
+import React from 'react'
+
+export default function PropsComponent() {
+  return (
+    <div>PropsComponent</div>
+  )
+}
+
+---

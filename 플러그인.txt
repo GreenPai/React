@@ -41,6 +41,17 @@ rfc
 -----------
 import React from 'react'
 
+
+rafc
+import React from 'react'
+
+export const UseRefComponent = () => {
+  return (
+    <div>UseRefComponent</div>
+  )
+}
+
+
 export default function PropsComponent() {
   return (
     <div>PropsComponent</div>

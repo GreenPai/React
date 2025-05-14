@@ -5,6 +5,10 @@ import "./App.css";
 import { UseRefComponent } from "./components/UseRefComponent";
 import { UseStateComponent } from "./components/UseStateComponent";
 import { UseReducerComponent } from "./components/UseReducerComponent";
+import { UseEffectComponent } from "./components/UseEffectComponent";
+import { UseMemoComponent } from "./components/UseMemoComponent";
+import { UseCallbackComponent } from "./components/UseCallbackComponent";
+import { UseCustomComponent } from "./components/UseCustomComponent";
 
 /*
   날짜 : 2025/05.13
@@ -30,8 +34,14 @@ function App() {
       <UseReducerComponent />
 
       {/* useEffect hook */}
+      <UseEffectComponent />
+
       {/* useMeme hook */}
+      <UseMemoComponent />
+
       {/* useCallback hook */}
+      <UseCallbackComponent />
+
       {/* useCustom hook */}
     </>
   );

@@ -2,7 +2,7 @@ import React from "react";
 import { useRef } from "react";
 
 export const UseRefComponent = () => {
-  // ref 선언 (자바스크립트의 id 값)
+  // ref 선언 (자바스크립트의 id 값) : 컴포넌트 DOM 요소에 대한 참조값을 생성하고 참조하기 위한 Hook
   const refUid = useRef();
   const refName = useRef();
 

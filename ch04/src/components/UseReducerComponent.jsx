@@ -30,6 +30,19 @@ export const UseReducerComponent = () => {
 
   const [userState, userDispatch] = useReducer(userReducer, initUserState);
 
+  // 전개연산자
+  const user = {
+    name: "홍길동",
+    age: 21,
+  };
+
+  const updateUser = {
+    ...user,
+    age: 31,
+  };
+
+  console.log(updateUser);
+
   return (
     <div className="UseReducerComponent">
       <h4>UseReducerComponent</h4>

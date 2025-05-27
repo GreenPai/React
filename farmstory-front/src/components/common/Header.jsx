@@ -10,8 +10,8 @@ export const Header = () => {
         </Link>
         <p>
           <Link to="/">HOME |</Link>
-          <a href="./user/login.html">로그인 |</a>
-          <a href="./user/terms.html">회원가입 |</a>
+          <Link to="/user/login">로그인 |</Link>
+          <Link to="/user/terms">회원가입 |</Link>
           <a href="./myinfo/cart.html">나의정보 |</a>
           <a href="#">로그아웃 |</a>
           <a href="./admin/">관리자 |</a>
@@ -30,13 +30,15 @@ export const Header = () => {
             </Link>
           </li>
           <li>
-            <Link to="/croptalk/story">농작물이야기</Link>
+            <Link to="/board/list?cate1=croptalk&cate2=story">
+              농작물이야기
+            </Link>
           </li>
           <li>
-            <a href="/event/info">이벤트</a>
+            <Link to="/board/list?cate1=event&cate2=info">이벤트</Link>
           </li>
           <li>
-            <a href="/community/notice">커뮤니티</a>
+            <Link to="/board/list?cate1=community&cate2=notice">커뮤니티</Link>
           </li>
         </ul>
       </header>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>J2SM Landing</title>
+    <link rel="stylesheet" href="/css/main/layout.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-white text-gray-800">
+    <!-- 네비게이션 -->
+    <nav class="flex justify-between items-center p-4 shadow">
+      <div class="flex gap-6 text-sm font-medium">
+        <a href="#">기능소개</a>
+        <a href="#">이용요금</a>
+        <a href="#">지원센터</a>
+      </div>
+      <button class="bg-sky-500 text-white px-4 py-1 rounded">로그인</button>
+    </nav>
+
+    <!-- 로고 & CTA -->
+    <section class="text-center py-16">
+      <h1 class="text-5xl font-bold mb-6">J2SM</h1>
+      <div class="space-x-4">
+        <button class="bg-red-600 text-white px-4 py-2 rounded">
+          무료체험
+        </button>
+        <button class="bg-black text-white px-4 py-2 rounded">
+          결제하고 시작
+        </button>
+      </div>
+    </section>
+
+    <!-- 서비스 소개 -->
+    <section class="text-center">
+      <h2 class="text-2xl font-semibold mb-4">Lion 오피스 하나면 충분해요!</h2>
+
+      <!-- 탭 메뉴 -->
+      <div class="flex justify-center space-x-4 mb-8 text-sm">
+        <button class="px-4 py-1 border-b-2 border-black font-medium">
+          그룹웨어
+        </button>
+        <button class="px-4 py-1 text-gray-500">경리회계</button>
+        <button class="px-4 py-1 text-gray-500">영업지원</button>
+        <button class="px-4 py-1 text-gray-500">설문관리</button>
+      </div>
+
+      <!-- 기능 카드 -->
+      <div class="grid grid-cols-2 gap-4 max-w-3xl mx-auto">
+        <div class="bg-gray-100 p-6 rounded-lg shadow">
+          <h3 class="font-semibold text-lg mb-2">캘린더</h3>
+          <p class="text-sm text-gray-600">
+            일정을 쉽게 공유하고 확인할 수 있어요.
+          </p>
+          <a href="#" class="text-blue-500 text-sm mt-2 inline-block"
+            >자세히 보기</a
+          >
+        </div>
+        <div class="bg-gray-100 p-6 rounded-lg shadow">
+          <h3 class="font-semibold text-lg mb-2">설문</h3>
+          <p class="text-sm text-gray-600">
+            간단하게 설문을 만들고 응답을 받을 수 있어요.
+          </p>
+          <a href="#" class="text-blue-500 text-sm mt-2 inline-block"
+            >자세히 보기</a
+          >
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

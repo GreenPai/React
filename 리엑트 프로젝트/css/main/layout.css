@@ -1,0 +1,50 @@
+#header_main {
+  width: 1200px;
+  height: 80px;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#header_logo {
+  width: 250px;
+  height: 40;
+  float: left;
+  border: 1px solid #ceceea;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+#header_logo div {
+  float: left;
+  width: 50%;
+}
+
+#header_logo div:nth-child(2) {
+  border-left: 1px solid #ceceea;
+  padding-left: 10px;
+  height: 40px;
+}
+
+#header_logo span {
+  margin-top: 5px;
+  font-size: 10px;
+  color: #272a31;
+  display: inline-block;
+}
+
+#header_logo img {
+  float: left;
+  width: 80px;
+  height: 40px;
+}
+
+#header_logo img:nth-child(1) {
+  margin-top: 5px;
+  width: 30px;
+  height: 30px;
+}
+
+#header_main nav {
+  float: left;
+}

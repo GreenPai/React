@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { getTerms } from "../../api/userAPI";
 
 export const Terms = () => {
@@ -6,8 +7,10 @@ export const Terms = () => {
   const [privacyText, setPrivacyText] = useState("");
 
   useEffect(() => {
+    // 약관 데이터 fetch 비동기 함수
     const fetchData = async () => {
       try {
+        // 약관 데이터 요청하기
         const data = await getTerms();
 
         setTermsText(data.terms);
@@ -17,6 +20,7 @@ export const Terms = () => {
       }
     };
 
+    // 호출
     fetchData();
   }, []);
 
@@ -24,39 +28,35 @@ export const Terms = () => {
     <section className="terms">
       <h2 className="tit">사이트 이용약관</h2>
       <table border="1">
-        <tbody>
-          <tr>
-            <td>
-              <textarea name="terms" value={termsText} readOnly></textarea>
-              <label>
-                <input type="checkbox" className="terms" />
-                &nbsp;동의합니다.
-              </label>
-            </td>
-          </tr>
-        </tbody>
+        <tr>
+          <td>
+            <textarea name="terms" value={termsText}></textarea>
+            <label>
+              <input type="checkbox" className="terms" />
+              &nbsp;동의합니다.
+            </label>
+          </td>
+        </tr>
       </table>
       <h2 className="tit">개인정보 취급방침</h2>
       <table border="1">
-        <tbody>
-          <tr>
-            <td>
-              <textarea name="privacy" value={privacyText} readOnly></textarea>
-              <label>
-                <input type="checkbox" className="privacy" />
-                &nbsp;동의합니다.
-              </label>
-            </td>
-          </tr>
-        </tbody>
+        <tr>
+          <td>
+            <textarea name="privacy" value={privacyText}></textarea>
+            <label>
+              <input type="checkbox" className="privacy" />
+              &nbsp;동의합니다.
+            </label>
+          </td>
+        </tr>
       </table>
       <div>
-        <a href="./login.html" className="btn btnCancel">
+        <Link to="/user/login" className="btn btnCancel">
           취소
-        </a>
-        <a href="./register.html" className="btn btnNext">
+        </Link>
+        <Link to="/user/register" className="btn btnNext">
           다음
-        </a>
+        </Link>
       </div>
     </section>
   );

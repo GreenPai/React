@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import { useDispatch } from "react-redux";
+import React, { useContext, useState } from "react";
 import { postUserLogin } from "../../api/userAPI";
-import { login } from "../../slices/loginSlice";
 import { useNavigate } from "react-router-dom";
+import AuthContext from "../../contexts/AuthContext";
+import useAuth from "../../hooks/useAuth";
 
 const initState = {
   uid: "",
@@ -12,10 +12,9 @@ const initState = {
 export const Login = () => {
   const [user, setUser] = useState({ ...initState });
 
-  const navigate = useNavigate();
+  const { login } = useAuth();
 
-  // 리덕스 스토어 dispatch
-  const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   // 핸들러
   const changeHandler = (e) => {
@@ -34,8 +33,8 @@ export const Login = () => {
         console.log(data);
 
         if (data.username) {
-          // redux login 호출
-          dispatch(login(data));
+          // context login 호출
+          login(data.username);
 
           // 메인 이동(컴포넌트 라우팅)
           navigate("/");

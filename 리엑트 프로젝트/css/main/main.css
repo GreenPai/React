@@ -13,6 +13,10 @@ li {
   list-style: none;
 }
 
+input {
+  border: #dededf;
+}
+
 #header_main {
   width: 1200px;
   height: 80px;
@@ -109,7 +113,6 @@ main {
   width: 400px;
   height: auto;
   min-height: 600px;
-  border: 1px solid black;
 }
 
 .buy_form_2 {
@@ -117,7 +120,6 @@ main {
   width: 600px;
   height: auto;
   min-height: 600px;
-  border: 1px solid black;
 }
 
 .buy_form_3 {
@@ -125,5 +127,76 @@ main {
   width: 100%;
   height: auto;
   min-height: 600px;
-  border: 1px solid black;
+}
+
+.input-default {
+  padding: 8px;
+  width: 100%;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.texts {
+  margin-top: 15px;
+}
+
+.btn {
+  background-color: green;
+  color: white;
+  padding: 10px 55px;
+  border-radius: 8px;
+  width: 100%;
+  margin-top: 30px;
+  box-sizing: border-box;
+}
+
+.btn:hover {
+  background-color: #333; /* hover 보라 */
+}
+
+.h3 {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.h2 {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  color: #333;
+}
+
+.inp {
+  width: 300px;
+  height: auto;
+  margin-top: 10px;
+}
+
+.btn1 {
+  background-color: #6b46c1; /* 보라색 */
+  color: white;
+  padding: 10px 55px;
+  border-radius: 8px;
+  width: 100%;
+  margin-top: 30px;
+  box-sizing: border-box;
+}
+
+.btn1:hover {
+  background-color: #553c9a; /* hover 보라 */
+}
+
+.btn2 {
+  background-color: #e2e8f0;
+  color: #2d3748;
+  padding: 10px 55px;
+  border-radius: 8px;
+  margin-top: 13px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.btn2:hover {
+  background-color: #cbd5e0;
 }

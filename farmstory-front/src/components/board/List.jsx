@@ -43,7 +43,7 @@ const List = () => {
 
     // 호출
     fetchData();
-  }, [pg, cate2]);
+  }, [pg, cate2]); // 반응 변수(의존성 배열)가 변경되면 다시 useEffect 실행
 
   return (
     <div id="board">
